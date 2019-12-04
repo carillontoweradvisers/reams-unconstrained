@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thank You Page</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149539539-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149539539-1');
+    </script>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <!-- External Stylesheets-->
+    <link
+        href="https://legacy.carillontower.com/solutions/reams/test/css/reams.css"
+        rel="stylesheet">
+</head>
+
+<body class="reams-unconstrained thankyou-page">
+    <section class="section-thankyou jumbotron text-white">
+        <div class="thankyou-text">
+            <img class="mb-4"
+                src="https://legacy.carillontower.com/solutions/reams/test/images/thankyou_check_icon_white.svg"
+                alt="Checkmark Icon">
+            <h1 class="text-center">
+                <strong>Thank You!</strong>
+            </h1>
+        </div>
+    </section>
+    <div class="row">
+        <div class="container">
+            <div class="col">
+                <h4 class="text-blue text-center"><strong>Thank you for requesting our whitepaper, the file<br> should
+                        start
+                        downloading
+                        in a
+                        few seconds.</strong></h4>
+
+                <p class="text-center mt-4">
+                    If downloading doesn't start automatically <a id="downloadLink"
+                        href="http://images.invest.carillontower.com/Web/CarillonTowerAdvisers1/{243ad203-00a5-46b3-8ef6-7b8d3aaca187}_harnessing-volatility-whitepaper.pdf?elqTrackId=4bd21e6788e44da6a9ce1c8afd63c267&elqTrack=true">click
+                        here to get your file</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var downloadTimeout = setTimeout(function () {
+            window.location = document.getElementById('downloadLink').href;
+        }, 3500);
+    </script>
+</body>
+
+</html>
